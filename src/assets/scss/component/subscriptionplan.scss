@@ -1,0 +1,33 @@
+.subscriptionModule{
+    min-height: 365px;
+    background-color:$left-gradient;
+    background-image: -webkit-gradient(linear, left top, right top, from($left-gradient), color-stop(91%, $right-gradient), to($right-gradient));
+    background-image: -webkit-linear-gradient(left, $left-gradient 0%, $right-gradient 91%, $right-gradient 100%);
+    background-image: linear-gradient(to right, $left-gradient 0%, $right-gradient 91%, $right-gradient 100%);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    color: $color-white;
+    h1{
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 52px;
+        font-family: 'Lato', sans-serif;
+        @media only screen and (max-width: 600px) {
+            font-size: 26px;
+        }
+        &.subscriptionModule__lighttext{
+            font-weight: lighter;
+            font-family: 'Quattrocento Sans', sans-serif;
+        }
+    }
+    h5{
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 100;
+        &.subscriptionModule--margintop{
+            margin-top: 16px;
+        }
+    }
+}

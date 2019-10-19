@@ -1,0 +1,42 @@
+.freetrialModule{
+    padding: 40px 0;
+    text-align: center;
+    h6{
+        color: $hippo-red;
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 13px;
+        margin-bottom: 16px;
+    }
+    h1{
+        width: 50%;
+        @media only screen and (max-width: 768px) {
+            width: calc(100% - 20px);
+            font-size: 26px;
+        }
+        color: $color-black;
+        margin: 0 auto;
+        margin-bottom: 24px;
+        font-size: 36px;
+        line-height: 46px;
+        font-family: 'Lato', sans-serif;
+        text-transform: capitalize;
+    }
+    button{
+        padding: 10px 20px;
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 20px;
+        border-radius: 3px;
+        border: none;
+        background-color:$right-gradient;
+        background-image: -webkit-gradient(linear, left top, right top, from($right-gradient), color-stop(51%, $left-gradient), to($left-gradient));
+        background-image: -webkit-linear-gradient(left, $right-gradient 0%, $left-gradient 81%, $left-gradient 100%);
+        background-image: linear-gradient(to right, $right-gradient 0%, $left-gradient 81%, $left-gradient 100%);
+    }
+    p{
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 13px;
+    }
+}

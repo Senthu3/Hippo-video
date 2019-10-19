@@ -1,0 +1,104 @@
+.referWrapper{
+    text-align: center;
+    margin-top: 136px;
+    padding-bottom: 48px;
+    @media only screen and (max-width: 768px) {
+        padding: 0;
+        margin-top: 16px;
+    }
+    h6{
+        color: $hippo-red;
+        text-transform: uppercase;
+        font-family: 'Quattrocento Sans', sans-serif;
+        font-size: 13px;
+        margin-bottom: 32px;
+    }
+    h1{
+        color: $color-black;
+        font-size: 36px;
+        font-family: 'Lato', sans-serif;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 48px;
+    }
+    .col{
+        border:1px solid $col-border-grey;
+        @media only screen and (max-width: 768px) {
+            border: 0;
+            border-bottom: 1px solid #cccccc;
+        }
+        margin-right: 48px;
+        padding: 0 36px 56px 36px;
+        @media only screen and (max-width: 768px) {
+            flex-basis:unset!important;
+            margin-right: 0;
+            text-align: center;
+        }
+        h3{
+            font-size: 22px;
+            font-family: 'Lato', sans-serif;
+            margin-bottom:24px;
+        }
+        ul{
+            li{
+                font-family: 'Quattrocento Sans', sans-serif;
+                font-size: 14px;
+                line-height: 32px;
+                text-align: left;
+                @media only screen and (max-width: 768px) {
+                    text-align: center;
+                }
+                &::before {
+                    content: "•";
+                    font-size: 24px;
+                    display: inline-block;
+                    width: .5em;
+                    margin-left: -12px;
+                }
+            }
+        }
+        &.column__red{
+            h3{
+                color: $hippo-red;
+            }
+            ul{
+                li{
+                    &::before {
+                        color:$hippo-red;
+                    }
+                }
+            }
+        }
+        &.column__green{
+            h3{
+                color: $hippo-green;
+            }
+            ul{
+                li{
+                    &::before {
+                        color:$hippo-green;
+                    }
+                }
+            }
+        }
+        &.column__purple{
+            h3{
+                color: $hippo-purple;
+            }
+            ul{
+                li{
+                    &::before {
+                        color:$hippo-purple;
+                    }
+                }
+            }
+        }
+        img{
+            margin: 24px 0 32px;
+        }
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+

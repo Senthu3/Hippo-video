@@ -1,0 +1,20 @@
+.topnav{
+    padding-right: 16px;
+    background: $topnav-bg;
+    .topnav__links{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            padding-left: 24px;
+            line-height: 30px;
+            a{
+                font-size: 11px;
+                color: $grey-text;
+                transition: 0.3s;
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}
